@@ -56,3 +56,6 @@ a.action.secondary.viewcart {
 a.action.secondary.viewcart span {
   color: #00539f;
 }
+li.product-with-buttons {
+  list-style-type: none;
+}
