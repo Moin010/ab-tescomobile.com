@@ -1,0 +1,58 @@
+.product-with-buttons {
+  padding-top: 5px;
+  padding-bottom: 40px;
+}
+
+.product-card-area {
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  padding-left: 25px;
+}
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.product-name {
+  width: 70%;
+}
+.product-card-area .product-card .product-image img {
+  width: 100px;
+}
+.go-to-basket-button-area {
+  width: 220px;
+}
+.product-name p {
+  font-family: TESCO Modern;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  color: #575252;
+}
+.product-varient {
+  margin-top: -17px;
+}
+.product-varient p {
+  font-family: TESCO Modern;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  color: #575252;
+}
+a.action.secondary.viewcart {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.product-with-buttons span.icon.icon-trolley {
+  font-size: 22px;
+}
+a.product-with-buttons span {
+  color: #00539f;
+}
