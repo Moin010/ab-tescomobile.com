@@ -66,17 +66,41 @@ var EAOA1285 = {
 		
 		`;
 
-    parentofTargetMenuArea.forEach((target, index) => {
-      if (index !== 2) {
-        target.insertAdjacentHTML("beforeend", cartDataWithButtons);
-      }
-    });
+    // parentofTargetMenuArea.forEach((target, index) => {
+    // 	if (index !== 2) {
+    // 		target.insertAdjacentHTML('beforeend', cartDataWithButtons);
+    // 	}
+    // });
+
+    // function reportWindowSize() {
+    // 	console.log(window.innerWidth);
+    // 	if (window.innerWidth < 1009) {
+    // 		parentofTargetMobileMenuArea.insertAdjacentHTML(
+    // 			'afterend',
+    // 			cartDataWithButtons
+    // 		);
+    // 	} else {
+    // 		parentofTargetMenuArea.forEach((target, index) => {
+    // 			if (index !== 2) {
+    // 				target.insertAdjacentHTML('beforeend', cartDataWithButtons);
+    // 			}
+    // 		});
+    // 	}
+    // }
+
+    // window.onresize = reportWindowSize;
 
     if (window.innerWidth < 1009) {
       parentofTargetMobileMenuArea.insertAdjacentHTML(
         "afterend",
         cartDataWithButtons
       );
+    } else {
+      parentofTargetMenuArea.forEach((target, index) => {
+        if (index !== 2) {
+          target.insertAdjacentHTML("beforeend", cartDataWithButtons);
+        }
+      });
     }
   },
 };
