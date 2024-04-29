@@ -58,7 +58,7 @@ var EAOA1285 = {
 		      data-bind="attr: {href: shoppingCartUrl}"
 		      href="${cartButton.href}"
 		    >
-		      <span class="icon icon-trolley"></span>
+		      <span class="icon icon-trolley " style="font-size:22px;"></span>
 		      <span data-bind="i18n: 'Go to basket'">Go to basket</span>
 		    </a>
 		  </div>
