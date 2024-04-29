@@ -57,7 +57,7 @@
 }
 .product-card-area div.product-varient p {
   display: flex;
-  gap: 1px;
+  gap: 5px;
 }
 .go-to-basket-button-area {
   width: 160px;
@@ -89,4 +89,13 @@ li.product-with-buttons {
 .span.icon.icon-trolley {
   font-size: 20px;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 1000px) {
+  .product-varient {
+    margin-top: -10px;
+  }
+  .go-to-basket-button-area {
+    margin-top: 35px;
+  }
 }
